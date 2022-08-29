@@ -1,0 +1,75 @@
+body {
+	background-color: #110C2A;
+}
+
+.section {
+  min-height:  1260px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:  1px solid red;
+}
+.section_info {
+  margin-top:  300px;
+}
+
+.panel {
+  overflow: hidden;
+  margin-bottom: 22px;
+  background-color: #fff;
+  border:  1px solid #bce8f1;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+.panel_header {
+  color:  #31708f;
+  background-color: #d9edf7;
+  font-size:  15px;
+  font-weight: 400;
+  padding:  10px 15px;
+  border-bottom: 1px solid #bce8f1;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel_body {
+  font-weight: 300;
+  padding: 15px;
+}
+
+.deep_space {
+  background-image:  linear-gradient(#000000, #0c0434);
+}
+
+.space {
+  background-image:  linear-gradient(#0c0434, #160086);
+}
+
+.sky {
+  background-image:  linear-gradient(#160086, #00e2ff);
+}
+
+.mountains {
+  background-image:  linear-gradient(#00e2ff, #d0d0d0);
+}
+
+.valley {
+  background-image:  linear-gradient(#d0d0d0, #1ff10e);
+}
+
+.city {
+  background-image:  linear-gradient(#1ff10e, #686868);
+}
+
+.under_city {
+  background-image:  linear-gradient(#686868, #533a02);
+}
+
+.sub_terranian {
+  background-image:  linear-gradient(#533a02, #231a06);
+}
+
+.cavern {
+  background-image:  linear-gradient(#231a06, #000000);
+}
+
