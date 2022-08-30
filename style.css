@@ -3,7 +3,7 @@ body {
 }
 
 .section {
-  min-height:  1260px;
+  min-height:  1920px;
   position: relative;
   display: flex;
   flex-direction: column;
