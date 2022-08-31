@@ -38,11 +38,18 @@ body {
 }
 
 .deep_space {
-  background-image:  linear-gradient(#000000, #0c0434);
+  background-color: #0c0434;
+  background-image: url(img/moon.png), url(img/stars.png), url(img/cosmic_gas.png), linear-gradient(#000000, #0c0434);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: center center, center center, top center, center center;
+  background-size: 100%, 100%, 10%, 100%;
 }
 
 .space {
-  background-image:  linear-gradient(#0c0434, #160086);
+  background-image:  url(img/cloud1.png), url(img/cloud1.png), url(img/cloud2.png), linear-gradient(#0c0434, #160086);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 175px 200px, 175px 200px, top right, top center;
+  background-size: 10%, 15%, 10%, 100%;
 }
 
 .sky {
