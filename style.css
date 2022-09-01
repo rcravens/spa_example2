@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   border:  1px solid red;
+  overflow: hidden;
 }
 .section_info {
   margin-top:  300px;
@@ -21,6 +22,7 @@ body {
   border:  1px solid #bce8f1;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  z-index: 1000;
 }
 .panel_header {
   color:  #31708f;
@@ -45,30 +47,48 @@ body {
   background-size: 100%, 100%, 100%, 100%;
 }
 
-.space {
-  background-image:  url(img/cloud1.png), url(img/cloud1.png), url(img/cloud2.png), linear-gradient(#0c0434, #160086);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 175px 200px, 175px 200px, top right, top center;
-  background-size: 10%, 15%, 10%, 100%;
-}
-
 .sky {
-  background-image:  linear-gradient(#160086, #00e2ff);
+  background-image:  linear-gradient(#0c0434, #00e2ff);
+}
+.sky .clouds {
+  position:  absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width:  10000px;
+  height: 100%;
+  background-image:  url(img/cloud1.png);
+  background-repeat: repeat;
+  background-size: 1000px 1000px;
+  z-index: 3;
+  animation: move-background 150s linear infinite;
+}
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
 
-.mountains {
+.roof_top {
   background-image:  linear-gradient(#00e2ff, #d0d0d0);
 }
 
-.valley {
-  background-image:  linear-gradient(#d0d0d0, #1ff10e);
+.closed_facade {
+  background-color:  #d0d0d0;
 }
 
-.city {
+.open_facade {
+  background-color:  #d0d0d0;
+}
+
+.ground_floor {
   background-image:  linear-gradient(#1ff10e, #686868);
 }
 
-.under_city {
+.basement_level {
   background-image:  linear-gradient(#686868, #533a02);
 }
 
