@@ -110,4 +110,59 @@ body {
 .cavern {
   background-image:  linear-gradient(#231a06, #000000);
 }
+/* parralax */
+.parallax_outer {
+  height: 900px;
+  overflow: hidden;
+  clip: rect(auto, auto, auto, auto);
+  background-color: #330000;
+}
+.parallax, .parallax_layer {
+  height: 900px;
+  margin: 0;
+  padding: 0;
+}
+.parallax {
+  position: relative;
+  z-index: 10;
+}
 
+.parallax_layer {
+  background-position: top center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 120%;
+  height: 1800px;
+  position: absolute;
+}
+.keyart_layer.parallax {
+  position: fixed;
+}
+
+#parallax0 {
+  background-image: url('img/parallax/parallax0.png');
+}
+#parallax1 {
+  background-image: url('img/parallax/parallax1.png');
+}
+#parallax2 {
+  background-image: url('img/parallax/parallax2.png');
+}
+#parallax3 {
+  background-image: url('img/parallax/parallax3.png');
+}
+#parallax4 {
+  background-image: url('img/parallax/parallax4.png');
+}
+#parallax5 {
+  background-image: url('img/parallax/parallax5.png');
+}
+#parallax6 {
+  background-image: url('img/parallax/parallax6.png');
+}
+#parallax7 {
+  background-image: url('img/parallax/parallax7.png');
+}
+#parallax8 {
+  background-image: url('img/parallax/parallax8.png');
+}
